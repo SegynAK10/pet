@@ -2,4 +2,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'landing_page/index.html')
+    context = {
+        'title': 'short',
+    }
+    return render(request, 'landing_page/index.html', context)
