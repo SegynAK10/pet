@@ -25,7 +25,15 @@
                 <label for="inputUrlShort" class="form-label">Url сокращённый</label>
                 <input type="url" class="form-control" id="inputUrlShort" placeholder="https://example.com">
             </div>
-
+            <div class="card-footer text-center">
+                 <div class="small"><a href="{% url 'register' %}">Нужен аккаунт? Зарегистрируйся</a></div>
+            </div>
+            <div class="card-footer text-center">
+                <div class="small"><a href="{% url 'login' %}">Уже есть аккаунт? Авторизоваться</a></div>
+            </div>
+            <div class="card-footer text-center">
+                <div class="small"><a href="{% url 'profile' %}">Личный кабинет</a></div>
+            </div>
         </div>
     </div>
 </body>
